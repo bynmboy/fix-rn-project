@@ -1,0 +1,45 @@
+
+	---
+
+	Uso básico:
+
+	fix-rn-projetc.sh
+
+	Opção -h ou --help : para visualizar este guia de ajuda
+	Opção -v ou --version :  para consultar a versão do programa
+	Opção -f ou --fix : para fazer a correção do projeto informado
+	Opção -a ou --autor : para informar o autor do Software
+	Opção -d ou --dir :  para informar o local de instalação do Software
+	Opção -b ou --bornin : para informar a data de criação do Software
+	Opção -r ou --remove : para fazer a desinstalação do Software
+	
+	---
+
+    Informe o nome da pasta do Projeto para que seja corrigido o problema:
+
+    "Unable to load script ..."
+
+    Ex: fix-react-native-project -f pastaDoMeuProjetoComProblema
+    Ou: fix-react-native-project --fix pastaDoMeuProjetoComProblema
+
+    Você deve estar fora da pasta do projeto, mas no mesmo nível que a pasta do Projeto
+
+    $ ls
+        ...
+        ...  pastaDoMeuProjetoComProblema ...
+        ...
+
+    * Se rodando o comando "ls" não for possível visualizar a pastaDoMeuProjetoComProblema
+      a correção irá falhar!.
+
+    * Se a correção já foi aplicada, não será possível realizar a correção novamente.
+
+    * A correção só será realizada em dois cenários diferentes:
+
+      1 : o Projeto é novo e nunca foi realizado a correção nele.
+
+      2 : o diretório "android/app/src/main/asset" dentro da
+          pastaDoMeuProjetoComProblema foi deletada ou está
+          vazia.
+
+      Não há uma terceira opção!
