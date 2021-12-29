@@ -63,7 +63,7 @@ case $ARG_NAME in
         	echo
         	echo " NÃO ACRESCENTE BARRA \"/\" AO FINAL DO NOME DO DIRETÓRIO DO PROJETO "
         	echo
-        	echo "$HELP_MESS"
+        	less $DIR_RES/HELP.txt
         	echo
         	exit 1
         elif [[ -d "$PROJECT_NAME" && ! -d "$PROJECT_NAME/$DIR_PATH" ]]
@@ -83,7 +83,7 @@ case $ARG_NAME in
         	echo
             echo "	Correção já aplicada para o projeto $PROJECT_NAME"
             echo
-            echo "$HELP_MESS"
+            less $DIR_RES/HELP.txt
             exit 0
         fi
     ;;
@@ -139,7 +139,7 @@ case $ARG_NAME in
             echo
             echo "	Opção inválida: $ARG_NAME"
 	    echo
-            echo "$HELP_MESS"
+            less $DIR_RES/HELP.txt
             exit 1
         elif [[ -z "$ARG_NAME" ]]
         then
@@ -147,7 +147,7 @@ case $ARG_NAME in
         	echo
         	echo "	Opção vázia "
         	echo
-        	echo "$HELP_MESS"
+        	less $DIR_RES/HELP.txt
         	exit 1
         fi
     ;;
